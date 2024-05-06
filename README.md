@@ -32,14 +32,18 @@ source venv/bin/activate  # En Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+3. Agregar Imagenes (IMPORTANTE!!)
 
-3. Ejecute en un Puerto diferente la API de la aplicacion:
+Descargue el Archivo comprimido con la carpeta static, descomprimala y reemplazela en la carpeta de la App
+https://drive.google.com/file/d/1Zk75q-qmUA8nn9KQeWhX-XQ31XKwJjYO/view?usp=sharing
+
+4. Ejecute en un Puerto diferente la API de la aplicacion:
 
 (La explacion del uso, activacion e instalacion de la API se encuentra en el archivo README del repositorio.)
 
 
 
-4. Ejecuta el servidor de desarrollo:
+5. Ejecuta el servidor de desarrollo:
 ```bash
 python manage.py runserver
 ```
