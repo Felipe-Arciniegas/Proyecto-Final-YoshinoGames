@@ -1,0 +1,41 @@
+{% extends 'store_games/main.html' %}
+{% load static %}
+{% block content %}
+{% for game in games %}
+<div class="shopping-cart">
+    <a  class="button outline-dark" href="{% url 'store' %}">← Continue Shopping</a>
+    <!-- Para este punto ahora se debe agregar a la base de datos un customer
+    luego una orden y por ultimo unos items a la orden esto lo hacemos como ejemplo para que 
+    podamos visualizar la info -->
+    <div class="cart-summary">
+        <table>
+            <tr>
+                <th><h5>Games: <strong></strong></h5></th>
+                <th><h5>Total:<strong> $</strong></h5></th>
+                <th>
+                    <a  class="button success" href="{% url 'checkout' %}">Checkout</a>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+        <div class="cart-row">
+            <div class="game-image"></div>
+            <div class="game-title"><strong>Item</strong></div>
+            <div class="game-price"><strong>Price</strong></div>
+            <div class="item-total"><strong>Total</strong></div>
+        </div>
+        
+            <div class="cart-row">
+                <div class="game-image"><img src="#" alt="{{item.product.name}}"></div>
+                <div class="game-description"><p></p></div>
+                <div class="game-price"><p>$</p></div>
+                <div class="item-total"><p>$</p></div>
+            </div>
+        
+
+    </div>
+</div>
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,57 @@
+{% extends 'store_games/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class='Home1'>
+    <h1>Welcome to YoshinoGames!</h1>
+    <div class="logo logohome">
+        <a href="{% url 'store' %}">
+            <img class='homelog' src="{% static 'logos/HomeYoshinoGames.gif' %}" alt="YoshinoGames Logo">
+        </a>
+    </div>
+</div>
+
+<div class='Home2'>
+    <div class="featured-games box-element">
+        <h2>Juegos destacados</h2>
+        <div class="game box-element2">
+            <img  class='featured-images' src="{% static 'images/Rust.jpg' %}" alt="Game 1">
+            <h3>Rust</h3>
+            <p>El Genial juego de Supervivencia en una isla apocaliptica ya esta aqui!!</p>
+        </div>
+        <div class="game box-element2">
+            <img class='featured-images' src="{% static 'images/MK1.jpg' %}" alt="Game 2">
+            <h3>Mortal Kombat 1</h3>
+            <p>Los peleadores ya llegaron con la ultima entrega de la saga Mortal Kombat!!</p>
+        </div>
+        <div class="game box-element2">
+            <img class='featured-images' src="{% static 'images/NFSUnbound.jpg' %}" alt="Game 3">
+            <h3>Need For Speed: Unbound</h3>
+            <p>Te gusta la velocidad? Ya llego a nuestra Store uno de los juegos mas freneticos de la saga de carreras</p>
+        </div>
+    </div>
+
+    <div class="latest-news box-element">
+        <h2>Ultimas Noticias!!</h2>
+        <div class="news box-element2">
+            <img class='featured-images2' src="{% static 'images/New1.jpg' %}" alt="News 1">
+            <h3>Euro Truck Simulator 2, el simulador de conducir camiones mas famoso, tendra volante oficial</h3>
+            <p>HORI ha anunciado un periferico que ha creado en colaboracion con SCS Software, los creadores de Euro Truck Simulator 2 y American Truck Simulator, fabricando un volante pensado para estos juegos.</p>
+        </div>
+        <div class="news box-element2">
+            <img class='featured-images2' src="{% static 'images/New2.jpg' %}" alt="News 2">
+            <h3>Director de Helldivers 2 reacciona al review bombing y se disculpa con los fans</h3>
+            <p>Helldivers 2 tomó por sorpresa al mundo y se convirtió de inmediato en uno de los videojuegos más exitosos de 2024, con millones de copias vendidas y miles de usuarios concurrentes en Steam. Todo iba viento en popa, pero una reciente controversia puso fin a la racha positiva y obligó al director a dar la cara.
+                Esta semana, Arrowhead Game Studios y Sony dieron a conocer que los jugadores de PC tendrán que vincular sus cuentas de Steam y PlayStation Network para disfrutar el juego. Es un requisito obligatorio sin excepción, por lo que aquellos que no lo cumplan serán incapaces de iniciar sesión y participar en las partidas, incluso si juegan en computadoras.
+            </p>
+        </div>
+        <div class="news box-element2">
+            <img class='featured-images2' src="{% static 'images/New3.jpg' %}" alt="News 3">
+            <h3>CD Projekt RED y el director de The Witcher 3 saben los errores que cometieron Cyberpunk 2077. Por eso, el RPG de fantasía oscura de Rebel Wolves lo hará distinto</h3>
+            <p>Aunque ahora Cyberpunk 2077 sea un videojuego brillante, la comunidad jamás olvidará lo que hizo CD Projekt Red en su lanzamiento. Tuvieron que pasar bastantes meses para que el título fuera disfrutable, y parece que tanto la compañía como el director de The Witcher 3: Wild Hunt han aprendido la lección. Se nota que han detectado los errores, y todo apunta a que no lo volverán a repetir en el futuro.
+                
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
